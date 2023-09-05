@@ -22,6 +22,10 @@ ENTRYPOINT ["java","-jar","app.jar"]
 
 # So, in summary, "java","-jar","app.jar" is a command that tells Docker to run a Java application using the Java Virtual Machine (java). It specifies that the application is contained within the app.jar file, and the JVM should execute this JAR file as the entry point for the Docker container.
 
+# FROM adoptopenjdk/openjdk11:alpine-jre
+# WORKDIR /opt/app
+# COPY target/spring-boot-web.jar app.jar
+# ENTRYPOINT ["java","-jar","app.jar"]
 
 
 
